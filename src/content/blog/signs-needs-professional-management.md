@@ -8,7 +8,7 @@ author: Victor
 lang: he
 layout: post.html
 permalink: /posts/signs-needs-professional-management/
-featured_image: /static/images/blog/featured-comparison.jpg
+featured_image: /static/images/blog/signs-management-featured.jpg
 tags:
   - portfolio-management
   - investment-tips
