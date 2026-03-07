@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: vbar20230812/assetsflow-blog
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 # Enable editorial workflow for drafts/reviews
 publish_mode: editorial_workflow
