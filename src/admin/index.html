@@ -5,10 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Manager | AssetFlow Blog</title>
 
+  <!-- Decap CMS Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <!-- Decap CMS requires this div -->
+  <div id="nc-root"></div>
+
   <!-- Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
-  <!-- Optional: Preview styles -->
+  <!-- Preview styles -->
   <style>
     :root {
       --color-primary: #2563eb;
@@ -16,10 +23,8 @@
       --font-heebo: 'Heebo', sans-serif;
     }
 
-    /* Load Heebo font for preview */
     @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
 
-    /* CMS Preview Styles */
     .cms-preview {
       font-family: var(--font-heebo);
       direction: rtl;
@@ -43,13 +48,9 @@
       margin-bottom: 1rem;
     }
 
-    /* English preview */
     .cms-preview[lang="en"] {
       direction: ltr;
     }
   </style>
-</head>
-<body>
-  <!-- CMS will render here -->
 </body>
 </html>

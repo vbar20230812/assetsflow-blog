@@ -8,7 +8,7 @@ lang: "he"
 layout: "post.html"
 permalink: "/posts/signs-needs-professional-management/"
 tags: ["portfolio-management", "investment-tips", "overseas-investments"]
-featured_image: "/static/images/blog/featured-comparison.jpg"
+featured_image: "/static/images/blog/portfolio-management.jpg"
 ---
 
 האם אי פעם שכחתם תשלום שהיה אמור להגיע מהשקעה? או אולי גיליתם פתאום שפרויקט הסתיים ולא ידעתם מה לעשות עם הכסף? אם התשובה חיובית, אתם לא לבד.
