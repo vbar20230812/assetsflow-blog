@@ -1,14 +1,18 @@
 ---
-title: "5 סימנים שהתיק ההשקעות הנדל״ן הפסיבי שלכם זקוק לניהול מקצועי"
-slug: "signs-needs-professional-management"
+title: 5 סימנים שהתיק ההשקעות הנדל״ן הפסיבי שלכם זקוק לניהול מקצועי
+slug: signs-needs-professional-management
 date: 2026-02-12
-excerpt: "גלו מתי הגיע הזמן לעבור מרשימות ואקסלים למערכת מקצועית לניהול השקעות נדל״ן פסיביות בחו״ל"
-author: "Victor"
-lang: "he"
-layout: "post.html"
-permalink: "/posts/signs-needs-professional-management/"
-tags: ["portfolio-management", "investment-tips", "overseas-investments"]
-featured_image: "/static/images/blog/portfolio-management.jpg"
+excerpt: גלו מתי הגיע הזמן לעבור מרשימות ואקסלים למערכת מקצועית לניהול השקעות
+  נדל״ן פסיביות בחו״ל
+author: Victor
+lang: he
+layout: post.html
+permalink: /posts/signs-needs-professional-management/
+featured_image: /static/images/blog/featured-comparison.jpg
+tags:
+  - portfolio-management
+  - investment-tips
+  - overseas-investments
 ---
 
 האם אי פעם שכחתם תשלום שהיה אמור להגיע מהשקעה? או אולי גיליתם פתאום שפרויקט הסתיים ולא ידעתם מה לעשות עם הכסף? אם התשובה חיובית, אתם לא לבד.
