@@ -8,7 +8,7 @@ lang: "he"
 layout: "post.html"
 permalink: "/posts/passive-income-nourishing/"
 tags: ["passive-income", "real-estate", "investing", "assetflow-method"]
-featured_image: "/static/images/blog/passive-income-flow.jpg"
+featured_image: "/static/images/blog/passive-income-nourishing.jpg"
 ---
 
 שלום רבים לכולם,
