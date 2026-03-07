@@ -27,7 +27,7 @@
   {% include "header.html" %}
 
   <main id="main-content" class="main-content">
-    {% block content %}{% endblock %}
+    {{ content | safe }}
   </main>
 
   {% include "footer.html" %}
