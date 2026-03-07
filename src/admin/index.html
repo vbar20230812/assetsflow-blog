@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Manager | AssetFlow Blog</title>
+
+  <!-- Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- Optional: Preview styles -->
+  <style>
+    :root {
+      --color-primary: #2563eb;
+      --color-text: #1e293b;
+      --font-heebo: 'Heebo', sans-serif;
+    }
+
+    /* Load Heebo font for preview */
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+    /* CMS Preview Styles */
+    .cms-preview {
+      font-family: var(--font-heebo);
+      direction: rtl;
+    }
+
+    .cms-preview h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .cms-preview h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cms-preview p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    /* English preview */
+    .cms-preview[lang="en"] {
+      direction: ltr;
+    }
+  </style>
+</head>
+<body>
+  <!-- CMS will render here -->
+</body>
+</html>

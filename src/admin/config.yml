@@ -1,0 +1,123 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/assetflow-blog
+  branch: main
+  base_url: https://api.github.com
+
+# Enable editorial workflow for drafts/reviews
+publish_mode: editorial_workflow
+
+# Media files location
+media_folder: "src/static/images/blog"
+public_folder: "/static/images/blog"
+
+# Site URL for previews
+site_url: https://blog.assetsflow.work
+display_url: https://blog.assetsflow.work
+
+# Locale
+locale: "he"
+
+collections:
+  # Blog Posts Collection
+  - name: "blog"
+    label: "בלוג"
+    label_singular: "פוסט"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+
+    # Filter to show only Hebrew posts in this view
+    filter: { field: "lang", value: "he" }
+
+    fields:
+      - { label: "כותרת", name: "title", widget: "string", required: true }
+      - { label: "Slug (URL)", name: "slug", widget: "string", required: true, hint: "ללא רווחים, אותיות אנגליות ומקפים בלבד" }
+      - { label: "תאריך", name: "date", widget: "datetime", required: true }
+      - { label: "תקציר", name: "excerpt", widget: "text", required: true, hint: "תקציר קצר שיופיע ברשימת הפוסטים" }
+      - { label: "מחבר", name: "author", widget: "string", default: "Victor", required: false }
+      - { label: "שפה", name: "lang", widget: "hidden", default: "he" }
+      - { label: "פריסה", name: "layout", widget: "hidden", default: "post.html" }
+      - { label: "פרמלינק", name: "permalink", widget: "hidden", default: "/posts/{{slug}}/" }
+
+      - label: "תמונה ראשית"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "תמונה שתופיע בראש הפוסט ובכרטיס ברשימה"
+
+      - label: "תגיות"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "תגיות לסיווג הפוסט"
+
+      - label: "תוכן הפוסט"
+        name: "body"
+        widget: "markdown"
+        required: true
+
+      - label: "קישור לגרסה באנגלית"
+        name: "translation_en"
+        widget: "string"
+        required: false
+        hint: "ה-Slug של הגרסה האנגלית (אם קיימת)"
+
+  # English Blog Posts Collection
+  - name: "blog_en"
+    label: "Blog (English)"
+    label_singular: "Post"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}-en"
+    extension: "md"
+    format: "yaml-frontmatter"
+
+    # Filter to show only English posts in this view
+    filter: { field: "lang", value: "en" }
+
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Slug (URL)", name: "slug", widget: "string", required: true, hint: "No spaces, English letters and hyphens only" }
+      - { label: "Date", name: "date", widget: "datetime", required: true }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: true, hint: "Short summary for the post list" }
+      - { label: "Author", name: "author", widget: "string", default: "Victor", required: false }
+      - { label: "Language", name: "lang", widget: "hidden", default: "en" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.html" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/en/posts/{{slug}}/" }
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        required: false
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+
+      - label: "Post Content"
+        name: "body"
+        widget: "markdown"
+        required: true
+
+      - label: "Hebrew Version Link"
+        name: "translation_he"
+        widget: "string"
+        required: false
+        hint: "The slug of the Hebrew version (if exists)"
+
+  # Site Settings
+  - name: "settings"
+    label: "הגדרות אתר"
+    files:
+      - name: "general"
+        label: "הגדרות כלליות"
+        file: "src/_data/metadata.json"
+        fields:
+          - { label: "כותרת האתר", name: "title", widget: "string" }
+          - { label: "תיאור", name: "description", widget: "text" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "מחבר", name: "author", widget: "string" }

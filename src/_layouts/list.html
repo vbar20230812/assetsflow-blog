@@ -1,0 +1,63 @@
+---
+layout: base.html
+---
+
+<div class="blog-container">
+  <header class="page-header" style="text-align: center; margin-bottom: 3rem;">
+    <h1>{{ title }}</h1>
+    {% if description %}
+      <p class="page-description" style="color: var(--color-text-light); margin-top: 0.5rem;">{{ description }}</p>
+    {% endif %}
+  </header>
+
+  {% if postsList and postsList.length > 0 %}
+    <div class="blog-list">
+      {% for post in postsList %}
+        <article class="blog-card">
+          {% if post.data.featured_image %}
+            <div class="blog-card-image">
+              <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="lazy">
+            </div>
+          {% endif %}
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <time datetime="{{ post.data.date | dateISO }}">
+                {% if lang == 'en' %}
+                  {{ post.data.date | dateFormat }}
+                {% else %}
+                  {{ post.data.date | dateFormatHe }}
+                {% endif %}
+              </time>
+              {% if post.data.author %}
+                <span>•</span>
+                <span>{{ post.data.author }}</span>
+              {% endif %}
+            </div>
+            <h2 class="blog-card-title">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            {% if post.data.excerpt %}
+              <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
+            {% endif %}
+            {% if post.data.tags and post.data.tags.length > 0 %}
+              <div class="blog-card-tags">
+                {% for tag in post.data.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state">
+      <div class="empty-state-icon">📝</div>
+      {% if lang == 'en' %}
+        <p>No posts yet.</p>
+      {% else %}
+        <p>אין פוסטים עדיין.</p>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

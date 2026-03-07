@@ -1,0 +1,10 @@
+{
+  "title": "AssetFlow Blog",
+  "description": "News, updates and insights about investment management",
+  "url": "https://blog.assetsflow.work",
+  "author": "AssetFlow Team",
+  "lang": {
+    "default": "he",
+    "alternates": ["en"]
+  }
+}

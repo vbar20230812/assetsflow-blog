@@ -1,0 +1,19 @@
+{
+  "name": "assetflow-blog",
+  "version": "1.0.0",
+  "description": "AssetFlow Blog - Netlify-powered with Decap CMS and Giscus comments",
+  "scripts": {
+    "build": "eleventy",
+    "build:prod": "ELEVENTY_ENV=production eleventy",
+    "build:dev": "ELEVENTY_ENV=development eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "markdown-it": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

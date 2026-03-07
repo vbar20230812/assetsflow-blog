@@ -1,0 +1,41 @@
+<!-- Minimal Accessibility Toolbar -->
+<div id="a11y-toolbar" class="a11y-toolbar" aria-label="כלי נגישות">
+  <button
+    type="button"
+    class="a11y-toggle"
+    aria-expanded="false"
+    aria-controls="a11y-panel"
+    title="כלי נגישות"
+  >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="4" r="2"/>
+      <path d="M12 6v6"/>
+      <path d="M8 10l4 2 4-2"/>
+      <path d="M8 20l4-8 4 8"/>
+    </svg>
+  </button>
+
+  <div id="a11y-panel" class="a11y-panel" hidden>
+    <div class="a11y-group">
+      <label class="a11y-label">גודל טקסט</label>
+      <div class="a11y-buttons">
+        <button type="button" data-action="font-size" data-value="small" title="קטן">א-</button>
+        <button type="button" data-action="font-size" data-value="normal" title="רגיל" class="active">א</button>
+        <button type="button" data-action="font-size" data-value="large" title="גדול">א+</button>
+        <button type="button" data-action="font-size" data-value="xlarge" title="גדול מאוד">א++</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <label class="a11y-label">ניגודיות</label>
+      <div class="a11y-buttons">
+        <button type="button" data-action="contrast" data-value="normal" class="active">רגיל</button>
+        <button type="button" data-action="contrast" data-value="high">גבוה</button>
+      </div>
+    </div>
+
+    <div class="a11y-actions">
+      <button type="button" data-action="reset">איפוס</button>
+    </div>
+  </div>
+</div>

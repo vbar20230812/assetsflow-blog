@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="תפריט ראשי">
+      <a href="/" class="logo">
+        <span class="logo-text">AssetFlow</span>
+        <span class="logo-blog">Blog</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/">בלוג</a></li>
+        <li><a href="/en/">English</a></li>
+        <li><a href="https://assetsflow.work" target="_blank" rel="noopener">AssetFlow App</a></li>
+      </ul>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        {% if lang == 'he' %}
+          <a href="/en/" class="lang-link">EN</a>
+        {% else %}
+          <a href="/" class="lang-link">עב</a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</header>
