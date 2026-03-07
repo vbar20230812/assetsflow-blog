@@ -27,7 +27,7 @@ layout: base.html
   {% endif %}
 
   <div class="post-content">
-    {{ content }}
+    {{ content | safe }}
   </div>
 
   {% if tags and tags.length > 0 %}
