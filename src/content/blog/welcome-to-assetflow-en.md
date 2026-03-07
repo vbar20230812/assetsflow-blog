@@ -7,6 +7,7 @@ author: "Victor"
 lang: "en"
 layout: "post.html"
 permalink: "/en/posts/welcome-to-assetflow/"
+featured_image: "/static/images/blog/welcome-assetflow.jpg"
 tags: ["welcome", "assetflow", "investing"]
 ---
 
