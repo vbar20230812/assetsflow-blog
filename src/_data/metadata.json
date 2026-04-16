@@ -1,11 +1,13 @@
 {
-  "title": "AssetFlow Blog",
-  "description": "News, updates and insights about investment management",
+  "title": "Assets Flow Blog",
+  "description": "News, updates and insights about passive income Real Estates investment management",
   "url": "https://blog.assetsflow.work",
-  "author": "AssetFlow Team",
+  "author": "Assets Flow Team",
   "lang": {
     "default": "he",
-    "alternates": ["en"]
+    "alternates": [
+      "en"
+    ]
   }
 }
 
