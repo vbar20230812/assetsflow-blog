@@ -19,6 +19,21 @@
   <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg">
 
   {% block head %}{% endblock %}
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics-compat.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: "REDACTED",
+      projectId: "assetflow-backend-2024",
+      appId: "REDACTED",
+      measurementId: "G-9Q3CQ6K56J"
+    });
+    firebase.analytics().logEvent('page_view', {
+      page_path: window.location.pathname,
+      page_title: document.title,
+      page_language: '{{ lang | default("he") }}'
+    });
+  </script>
 </head>
 <body class="lang-{{ lang | default('he') }}">
   <!-- Skip Link for Accessibility -->
