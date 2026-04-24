@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/static');
   eleventyConfig.addPassthroughCopy('src/admin');
   eleventyConfig.addPassthroughCopy('CNAME');
+  eleventyConfig.addPassthroughCopy({ 'src/static/robots.txt': 'robots.txt' });
 
   // Watch targets
   eleventyConfig.addWatchTarget('src/static/css/');
