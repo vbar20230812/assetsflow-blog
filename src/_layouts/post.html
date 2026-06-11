@@ -48,7 +48,15 @@ layout: base.html
 
   {% if featured_image %}
     <div class="post-featured-image">
-      <img src="{{ featured_image }}" alt="{{ title }}" loading="lazy">
+      {% set isSvg = featured_image.indexOf(".svg") !== -1 %}
+      {% if isSvg %}
+      <img src="{{ featured_image }}" alt="{{ title }}" loading="lazy" width="800" height="450">
+      {% else %}
+      <picture>
+        <source srcset="{{ featured_image | replace('.png', '.webp') | replace('.jpg', '.webp') | replace('.jpeg', '.webp') }}" type="image/webp">
+        <img src="{{ featured_image }}" alt="{{ title }}" loading="lazy" width="800" height="450">
+      </picture>
+      {% endif %}
     </div>
   {% endif %}
 

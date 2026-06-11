@@ -8,7 +8,7 @@ lang: "en"
 layout: "post.html"
 permalink: "/en/posts/signs-needs-professional-management/"
 tags: ["portfolio-management", "investment-tips", "overseas-investments"]
-featured_image: "/static/images/blog/featured-comparison.jpg"
+featured_image: "/static/images/blog/signs-management-featured.jpg"
 ---
 
 Have you ever forgotten about a payment that was supposed to come from an investment? Or maybe you suddenly discovered that a project ended and didn't know what to do with the money? If the answer is yes, you're not alone.
